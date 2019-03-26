@@ -100,8 +100,8 @@ wrapper {
 
 
 buildScan {
-	licenseAgreementUrl = 'https://gradle.com/terms-of-service'
-	licenseAgree = 'yes'
+	server = System.getenv("GE_URL")
+	publishAlways()
 }
 
 buildScanRecipes {
