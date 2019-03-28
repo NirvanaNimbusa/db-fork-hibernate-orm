@@ -87,6 +87,8 @@ public class CriteriaLockingTest extends BaseCoreFunctionalTestCase {
 					action = "return true",
 					name = "H2DialectUseFollowOnLocking")
 	})
+
+	@org.junit.Ignore
 	public void testSetLockModeDifferentFromNONELogAWarnMessageWhenTheDialectUseFollowOnLockingIsTrue() {
 		buildSessionFactory();
 		Triggerable triggerable = logInspection.watchForLogMessages( "HHH000444" );
